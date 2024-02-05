@@ -82,16 +82,14 @@ body{
 .div-pixel-white{
 
     background-color: wheat;
-    width: 25px;
-    height: 25px;
+    
     flex: 1 1 auto;
 }
 
 .div-pixel-black{
 
     background-color: black;
-    width: 25px;
-    height: 25px;
+   
     flex: 1 1 auto;
 
 }
