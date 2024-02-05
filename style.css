@@ -15,8 +15,8 @@ body{
 
     background-color: brown;
     border-radius: 12px;
-    width: 500px;
-    height: 550px;
+    padding: 12px;
+
 }
 
 /* TOP ELEMENTS */
@@ -28,7 +28,7 @@ body{
     justify-content: center; 
 
     height: 65px;
-  
+
 }
 
 .pixel-display{
@@ -55,16 +55,39 @@ body{
 
 .screen-container{
 
+    display: flex;
     background-color: aliceblue;
-    border-radius: 6px;
 
-    width: 80%;
-    height: 80%;
-
+    margin: 24px;
+    
 }
 
 .screen{
-    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 400px;
+    height: 448px;
+}
+
+.div-pixel-white{
+
+    background-color: black;
+    width: 25px;
+    height: 28px;
+    flex: 1 1 auto;
+}
+
+.div-pixel-black{
+
+    background-color: aliceblue;
+    width: 25px;
+    height: 28px;
+    flex: 1 1 auto;
+
 }
 
 /* BOTTOM ELEMENTS */
@@ -76,6 +99,7 @@ body{
     align-items: center;
 
     height: 65px;
+
 }
 
 .reset-btn{
