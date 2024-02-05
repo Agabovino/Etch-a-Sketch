@@ -41,6 +41,7 @@ function deletePixels(){
     pixelArray.forEach((pixel)=> {
         pixel.remove();
     });
+    isItOn = false;
 }
 
 /*EVENT LISTENER DOS BOTOES*/
@@ -49,7 +50,8 @@ startBtn.addEventListener('click', ()=>{
     
     pixelArray.forEach((pixel) => {
         pixel.addEventListener('mouseover',()=>{
-            pixel.setAttribute('class', 'div-pixel-black');
+           
+                pixel.setAttribute('class', 'div-pixel-black');
         });
     });
     
@@ -58,50 +60,34 @@ startBtn.addEventListener('click', ()=>{
 resetBtn.addEventListener('click', ()=>{
 
     for(let pixel of pixelArray){
-
         pixel.setAttribute('class', 'div-pixel-white');
     }
 })
 
 powerBtn.addEventListener('click', ()=>{
-
-    if(isItOn == false){
-        
+    if(isItOn == false){   
         setPixels();
         isItOn = true;
-
     }else{
-
         deletePixels();
         isItOn = false;
     }
-    
 })
 
 rightBtn.addEventListener('click', ()=>{
-
     operatorNumber *= 2;
     console.log(operatorNumber);
     document.querySelector('.pixel-display').textContent = operatorNumber;
+    deletePixels();
     
 })
 
 leftBtn.addEventListener('click', ()=>{
-
     operatorNumber /= 2;
     console.log(operatorNumber);
 
     document.querySelector('.pixel-display').textContent = operatorNumber;
+    deletePixels();
     
 })
-
-
-
-
-/* 160.000pixeis^2 
-
- 16 = 6,25% de 400(valor total)
- 32 = 3,125% de 400
-
-*/
 
