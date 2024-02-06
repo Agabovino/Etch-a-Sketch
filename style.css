@@ -75,6 +75,9 @@ body{
     background-color: #3E6680;
     
     margin: 24px;
+    box-shadow:inset 0px -1px 9px black;
+
+    border-radius: 8px;
     
 }
 
@@ -87,6 +90,9 @@ body{
 
     box-shadow:inset 0px -1px 18px black;
 
+    margin: 8px;
+    background-color: #2c4c61;
+    
     width: 400px;
     height: 400px;
 }
@@ -148,6 +154,16 @@ body{
     box-shadow:3px 4px 6px black;
     box-shadow: inset -2px -3px 11px black, 2px 1px 7px black;
 }*/
+
+.color-btn{
+
+    padding: 12px;
+    background-color: #027BCE;
+    color: azure;
+    font-weight: bold;
+    border-radius: 32px;
+    box-shadow: inset -2px -3px 11px black, 2px 1px 7px black;
+}
 
 .power-btn {
    

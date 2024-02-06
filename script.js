@@ -1,7 +1,7 @@
 let screen = document.querySelector('.screen');
 
 let resetBtn = document.querySelector('.reset-btn');
-let startBtn = document.querySelector('.start-btn');
+let colorBtn = document.querySelector('.color-btn');
 let powerBtn = document.querySelector('.power-btn');
 let rightBtn = document.querySelector('.right-arrow-btn');
 let leftBtn = document.querySelector('.left-arrow-btn');
@@ -12,6 +12,7 @@ operatorNumber = Number(operatorNumber);
 let stringWidthAndHeight = (((400/operatorNumber)/400)*100 ) + '%';
 
 let isItOn = false;
+let isColorBtnPressed = false;
 
 const pixelArray = [];
 
@@ -84,6 +85,12 @@ function getColorAttribute(){
     }
 }
 
+function getColorBtnState(){
+
+    if (isColorBtnPressed == false){
+        return ''; 
+    }
+}
 /*EVENT LISTENER DOS BOTOES*/
 
 /*startBtn.addEventListener('click', ()=>{
@@ -107,6 +114,7 @@ resetBtn.addEventListener('click', ()=>{
 })
 
 powerBtn.addEventListener('click', ()=>{
+   
     if(isItOn == false){   
         setPixels();
 
@@ -114,7 +122,12 @@ powerBtn.addEventListener('click', ()=>{
             pixel.addEventListener('mouseover',()=>{
                
                     pixel.setAttribute('class', 'div-pixel-rgb');
-                    pixel.style.backgroundColor  = getColorAttribute();
+                    if(isColorBtnPressed){
+                        pixel.style.backgroundColor = 'black';
+                    }else{
+                        pixel.style.backgroundColor  = getColorAttribute();
+                    }
+                    
             });
         });
 
@@ -138,7 +151,7 @@ rightBtn.addEventListener('click', ()=>{
         deletePixels();
     }
     
-})
+});
 
 leftBtn.addEventListener('click', ()=>{
    
@@ -152,5 +165,17 @@ leftBtn.addEventListener('click', ()=>{
 
     }
     
-})
+});
 
+colorBtn.addEventListener('click', ()=>{
+
+    if(isColorBtnPressed){
+       
+        isColorBtnPressed = false;
+
+    }else{
+        isColorBtnPressed = true;
+    }
+    
+     
+});
