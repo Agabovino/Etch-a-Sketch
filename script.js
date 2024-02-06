@@ -20,10 +20,8 @@ function setPixels(){
 
     operatorNumber = document.querySelector('.pixel-display').textContent;
     operatorNumber = Number(operatorNumber);
-    console.log(operatorNumber);
 
     stringWidthAndHeight = (((400/operatorNumber)/400)*100 ) + '%';
-    console.log(stringWidthAndHeight);
     
     for(i = 0; i < operatorNumber*operatorNumber ; i++){
 
