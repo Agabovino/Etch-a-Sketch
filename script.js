@@ -128,19 +128,29 @@ powerBtn.addEventListener('click', ()=>{
 })
 
 rightBtn.addEventListener('click', ()=>{
-    operatorNumber *= 2;
-    console.log(operatorNumber);
-    document.querySelector('.pixel-display').textContent = operatorNumber;
-    deletePixels();
+    
+    if(operatorNumber <= 64 ){
+
+        operatorNumber *= 2;
+        console.log(operatorNumber);
+        document.querySelector('.pixel-display').textContent = operatorNumber;
+       
+        deletePixels();
+    }
     
 })
 
 leftBtn.addEventListener('click', ()=>{
-    operatorNumber /= 2;
-    console.log(operatorNumber);
+   
+    if(operatorNumber >= 4){
 
-    document.querySelector('.pixel-display').textContent = operatorNumber;
-    deletePixels();
+        operatorNumber /= 2;
+        console.log(operatorNumber);
+    
+        document.querySelector('.pixel-display').textContent = operatorNumber;
+        deletePixels();
+
+    }
     
 })
 
