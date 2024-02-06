@@ -91,19 +91,7 @@ function getColorBtnState(){
         return ''; 
     }
 }
-/*EVENT LISTENER DOS BOTOES*/
-
-/*startBtn.addEventListener('click', ()=>{
-    
-    pixelArray.forEach((pixel) => {
-        pixel.addEventListener('mouseover',()=>{
-           
-                pixel.setAttribute('class', 'div-pixel-rgb');
-                pixel.style.backgroundColor  = getColorAttribute();
-        });
-    });
-    
-})*/
+/*EVENT LISTENERS DOS BOTOES*/
 
 resetBtn.addEventListener('click', ()=>{
     
