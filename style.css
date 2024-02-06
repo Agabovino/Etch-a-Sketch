@@ -12,7 +12,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow:10px 10px 10px #3E6680;
+    box-shadow:6px 7px 6px grey;
 
     background-color: #00487C;
     border-radius: 12px;
@@ -54,7 +54,7 @@ body{
     border-radius: 6px;
     width: 32px;
     box-shadow:3px 4px 6px black;
-    box-shadow:inset -2px -3px 11px black;
+    box-shadow: inset -2px -3px 11px black, 2px 1px 7px black;
   
 }
 .right-arrow-btn{
@@ -63,7 +63,7 @@ body{
     border-radius: 6px;
     width: 32px;
     box-shadow:3px 4px 6px black;
-    box-shadow:inset -2px -3px 11px black;
+    box-shadow: inset -2px -3px 11px black, 2px 1px 7px black;
     
 }
 
@@ -85,6 +85,8 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 
+    box-shadow:inset 0px -1px 18px black;
+
     width: 400px;
     height: 400px;
 }
@@ -99,6 +101,13 @@ body{
 .div-pixel-black{
 
     background-color: black;
+   
+    flex: 1 1 auto;
+
+}
+
+.div-pixel-rgb{
+
    
     flex: 1 1 auto;
 
@@ -119,17 +128,17 @@ body{
 
 .reset-btn{
 
-    padding: 8px;
+    padding: 12px;
     background-color:#027BCE ;
     
     font-weight: bold;
     color: azure;
-    border-radius: 12px;
+    border-radius: 32px;
     box-shadow:3px 4px 6px black;
-    box-shadow:inset -2px -3px 11px black;
+    box-shadow: inset -2px -3px 11px black, 2px 1px 7px black;
 }
 
-.start-btn{
+/*.start-btn{
 
     padding: 8px;
     background-color: #027BCE;
@@ -137,17 +146,16 @@ body{
     font-weight: bold;
     border-radius: 12px;
     box-shadow:3px 4px 6px black;
-    box-shadow:inset -2px -3px 11px black;
-}
+    box-shadow: inset -2px -3px 11px black, 2px 1px 7px black;
+}*/
 
-.power-btn{
-
-    padding: 8px;
-    background-color:#027BCE;
+.power-btn {
+   
+    padding: 12px;
+    background-color: #027BCE;
     color: azure;
     font-weight: bold;
-    border-radius: 12px;
-    box-shadow:3px 4px 6px black;
-    box-shadow:inset -2px -3px 11px black;
+    border-radius: 32px;
+    box-shadow: inset -2px -3px 11px black, 2px 1px 7px black;
 }
 
