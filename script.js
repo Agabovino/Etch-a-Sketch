@@ -85,12 +85,6 @@ function getColorAttribute(){
     }
 }
 
-function getColorBtnState(){
-
-    if (isColorBtnPressed == false){
-        return ''; 
-    }
-}
 /*EVENT LISTENERS DOS BOTOES*/
 
 resetBtn.addEventListener('click', ()=>{
