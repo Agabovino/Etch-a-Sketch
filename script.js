@@ -4,7 +4,7 @@ let resetBtn = document.querySelector('.reset-btn');
 let colorBtn = document.querySelector('.color-btn');
 let powerBtn = document.querySelector('.power-btn');
 let rightBtn = document.querySelector('.right-arrow-btn');
-let leftBtn = document.querySelector('.left-arrow-btn');
+let leftBtn  = document.querySelector('.left-arrow-btn');
 
 let operatorNumber = document.querySelector('.pixel-display').textContent;
 operatorNumber = Number(operatorNumber);
@@ -127,7 +127,6 @@ rightBtn.addEventListener('click', ()=>{
     if(operatorNumber <= 64 ){
 
         operatorNumber *= 2;
-        console.log(operatorNumber);
         document.querySelector('.pixel-display').textContent = operatorNumber;
        
         deletePixels();
@@ -140,7 +139,6 @@ leftBtn.addEventListener('click', ()=>{
     if(operatorNumber >= 4){
 
         operatorNumber /= 2;
-        console.log(operatorNumber);
     
         document.querySelector('.pixel-display').textContent = operatorNumber;
         deletePixels();
